@@ -29,8 +29,8 @@ RUN wget -q https://getcomposer.org/download/$COMPOSER_VERSION/composer.phar && 
     mv composer.phar /usr/bin/composer && \
     chmod +x /usr/bin/composer
 
-ENV STATAMIC_VERSION 2.8.10
-ENV STATAMIC_CHECKSUM be546b067c84b42efd8865f7169050a3cec07d3aabaa1f4c9dfa837bae60182f
+ENV STATAMIC_VERSION 2.11.13
+ENV STATAMIC_CHECKSUM 8cef4ce25436fda7e77bc591c9fc1258ade94ecc18a99f828bdd7d31424e18fd
 RUN wget -q https://outpost.statamic.com/v2/get/$STATAMIC_VERSION -O statamic-$STATAMIC_VERSION.zip && \
     echo "$STATAMIC_CHECKSUM  statamic-$STATAMIC_VERSION.zip" | sha256sum -c - && \
     unzip -q statamic-$STATAMIC_VERSION.zip -d /tmp/ && \
