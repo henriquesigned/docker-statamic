@@ -5,7 +5,7 @@ Run Statamic in a Docker container!
 # Installing
 
 ```
-$ git clone https://github.com/mschwager/docker-statamic.git
+$ git clone https://github.com/henriquesigned/docker-statamic.git
 $ cd docker-statamic
 $ docker build -t statamic .
 ```
